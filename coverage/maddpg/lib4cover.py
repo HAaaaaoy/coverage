@@ -8,7 +8,7 @@ import argparse
 
 
 def mlp_model(input, num_outputs, scope, reuse=False, num_units=128):
-    with tf.compat.v1.variable_scope(scope, reuse=reuse):
+    with tf.variable_scope(scope, reuse=reuse):
         out = input
         out = layers.fully_connected(out, num_outputs=num_units, activation_fn=tf.nn.relu)
         out = layers.fully_connected(out, num_outputs=num_units, activation_fn=tf.nn.relu)

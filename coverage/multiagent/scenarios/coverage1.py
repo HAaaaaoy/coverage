@@ -13,7 +13,7 @@ class Scenario(BaseScenario):
         self.num_agents = 4
         self.num_pois = 20
         self.pos_agents = [[[x, x], [x, -x], [-x, -x], [-x, x]] for x in [0.9]][0]
-        self.pos_pois = np.load('./pos_PoIs.npy')
+        self.pos_pois = np.load('./pos_PoIs_1.npy')
 
         self.r_cover = r_cover
         self.r_comm = r_comm

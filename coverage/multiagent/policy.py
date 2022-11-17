@@ -1,5 +1,7 @@
 import numpy as np
 from pyglet.window import key
+# 包含基于键盘输入的交互式策略的代码
+
 
 # individual agent policy
 class Policy(object):

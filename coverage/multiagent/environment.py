@@ -4,6 +4,8 @@
 # 4.改造动作空间维度, 将2*dim_p+1 改为 dim_p维度, u[0] = action[0], u[1] = action[1]
 # 5.对通信模块进行删除
 
+
+# 包含用于环境模拟（交互物理、函数等）的代码_step()
 import gym
 from gym import spaces
 from gym.envs.registration import EnvSpec

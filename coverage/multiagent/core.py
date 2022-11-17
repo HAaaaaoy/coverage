@@ -2,6 +2,8 @@
 # 1) 对没有和其他agent建立连接的agent, 会受到与他最近的agent之间的拉力
 # 2) 若所有agent均有邻居但未达到全连接, 则对当前所有距离里比通信距离大的最小距离添加拉力
 
+# 包含在整个代码中使用的各种对象（实体、地标、代理等）的类。
+
 import numpy as np
 
 # physical/external base state of all entites

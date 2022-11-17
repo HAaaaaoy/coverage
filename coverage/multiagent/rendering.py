@@ -1,10 +1,16 @@
 """
 2D rendering framework
 """
+
+
+# 用于在屏幕上显示代理行为。渲染动画图
 from __future__ import division
 import os
 import six
 import sys
+
+from pyglet.gl.gl_compat import glPushMatrix, glTranslatef, glRotatef, glScalef, glPopMatrix, GL_LINE_STIPPLE, \
+    glLineStipple, glVertex3f, glBegin, glEnd, GL_POLYGON, glColor4f, glVertex2f
 
 if "Apple" in sys.version:
     if 'DYLD_FALLBACK_LIBRARY_PATH' in os.environ:

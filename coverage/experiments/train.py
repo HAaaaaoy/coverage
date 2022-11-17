@@ -14,9 +14,9 @@ import maddpg.common.tf_util as U
 from maddpg.lib4cover import make_env, get_trainers, create_dir, parse_args
 from experiments.test_rec import test_rec
 
-scenario_name = "coverage_3"
+scenario_name = "coverage3"     # 使用coverage3
 
-load_policy_path = "./" + scenario_name + "/" + os.listdir("./" + scenario_name)[-1] + "/policy/"
+load_policy_path = "./" + scenario_name + "/" + os.listdir("./" + scenario_name)[-1] + "/policy/"  # 加载Policy和buffers
 load_buffer_path = "./" + scenario_name + "/" + os.listdir("./" + scenario_name)[-1] + "/buffers/"
 
 # load_policy_path = None
@@ -25,8 +25,8 @@ load_buffer_path = "./" + scenario_name + "/" + os.listdir("./" + scenario_name)
 
 max_episode_len = 80  # episode最多有多少状态转换
 num_eps = 20000  # 执行多少episode
-lr, gamma = 1e-2, 0.95
-batch_size = 1024
+lr, gamma = 1e-2, 0.95 # 1e-2 100
+batch_size = 1024 # 一次训练抓取的数据量
 # epsilon_0 = 0.1
 
 display_rate = 100

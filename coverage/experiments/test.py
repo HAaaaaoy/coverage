@@ -6,7 +6,7 @@ import maddpg.common.tf_util as U
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 
-scenario_name = "coverage_2"
+scenario_name = "coverage2"
 # load_path = "./coverage_2/coverage_2_02_13_10_07/policy/"
 load_path = "./" + scenario_name + "/" + os.listdir("./" + scenario_name)[-2] + "/policy/"
 
